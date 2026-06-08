@@ -13,8 +13,11 @@
 		FE8E40412FD71001009FDB81 /* src/src/bcrypt_pbkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */; };
 		FE8E40422FD71001009FDB81 /* src/src/blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40182FD71001009FDB81 /* src/src/blowfish.c */; };
 		FE8E40432FD71001009FDB81 /* src/src/channel.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40192FD71001009FDB81 /* src/src/channel.c */; };
+		FE8E40802FD71002009FDB81 /* src/src/chacha.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40812FD71002009FDB81 /* src/src/chacha.c */; };
+		FE8E40822FD71002009FDB81 /* src/src/cipher-chachapoly.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40832FD71002009FDB81 /* src/src/cipher-chachapoly.c */; };
 		FE8E40442FD71001009FDB81 /* src/src/comp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40202FD71001009FDB81 /* src/src/comp.c */; };
 		FE8E40452FD71001009FDB81 /* src/src/crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40212FD71001009FDB81 /* src/src/crypt.c */; };
+		FE8E40842FD71002009FDB81 /* src/src/crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40852FD71002009FDB81 /* src/src/crypto.c */; };
 		FE8E40462FD71001009FDB81 /* src/src/global.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40222FD71001009FDB81 /* src/src/global.c */; };
 		FE8E40472FD71001009FDB81 /* src/src/hostkey.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40232FD71001009FDB81 /* src/src/hostkey.c */; };
 		FE8E40482FD71001009FDB81 /* src/src/keepalive.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40242FD71001009FDB81 /* src/src/keepalive.c */; };
@@ -25,12 +28,14 @@
 		FE8E40532FD71001009FDB81 /* src/src/misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40292FD71001009FDB81 /* src/src/misc.c */; };
 		FE8E40542FD71001009FDB81 /* src/src/packet.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40302FD71001009FDB81 /* src/src/packet.c */; };
 		FE8E40552FD71001009FDB81 /* src/src/pem.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40312FD71001009FDB81 /* src/src/pem.c */; };
+		FE8E40862FD71002009FDB81 /* src/src/poly1305.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40872FD71002009FDB81 /* src/src/poly1305.c */; };
 		FE8E40562FD71001009FDB81 /* src/src/publickey.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40322FD71001009FDB81 /* src/src/publickey.c */; };
 		FE8E40572FD71001009FDB81 /* src/src/scp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40332FD71001009FDB81 /* src/src/scp.c */; };
 		FE8E40582FD71001009FDB81 /* src/src/session.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40342FD71001009FDB81 /* src/src/session.c */; };
 		FE8E40592FD71001009FDB81 /* src/src/sftp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40352FD71001009FDB81 /* src/src/sftp.c */; };
 		FE8E40602FD71001009FDB81 /* src/src/transport.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40362FD71001009FDB81 /* src/src/transport.c */; };
 		FE8E40612FD71001009FDB81 /* src/src/userauth.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40372FD71001009FDB81 /* src/src/userauth.c */; };
+		FE8E40882FD71002009FDB81 /* src/src/userauth_kbd_packet.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40892FD71002009FDB81 /* src/src/userauth_kbd_packet.c */; };
 		FE8E40622FD71001009FDB81 /* src/src/version.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40382FD71001009FDB81 /* src/src/version.c */; };
 		FE8E40662FD71001009FDB81 /* src/include/libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E40632FD71001009FDB81 /* src/include/libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE8E40672FD71001009FDB81 /* src/include/libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E40642FD71001009FDB81 /* src/include/libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,25 +51,47 @@
 		FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/bcrypt_pbkdf.c; sourceTree = "<group>"; };
 		FE8E40182FD71001009FDB81 /* src/src/blowfish.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/blowfish.c; sourceTree = "<group>"; };
 		FE8E40192FD71001009FDB81 /* src/src/channel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/channel.c; sourceTree = "<group>"; };
+		FE8E40812FD71002009FDB81 /* src/src/chacha.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/chacha.c; sourceTree = "<group>"; };
+		FE8E408A2FD71002009FDB81 /* src/src/chacha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/chacha.h; sourceTree = "<group>"; };
+		FE8E40832FD71002009FDB81 /* src/src/cipher-chachapoly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "src/src/cipher-chachapoly.c"; sourceTree = "<group>"; };
+		FE8E408B2FD71002009FDB81 /* src/src/cipher-chachapoly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "src/src/cipher-chachapoly.h"; sourceTree = "<group>"; };
 		FE8E40202FD71001009FDB81 /* src/src/comp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/comp.c; sourceTree = "<group>"; };
+		FE8E408C2FD71002009FDB81 /* src/src/comp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/comp.h; sourceTree = "<group>"; };
 		FE8E40212FD71001009FDB81 /* src/src/crypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/crypt.c; sourceTree = "<group>"; };
+		FE8E40852FD71002009FDB81 /* src/src/crypto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/crypto.c; sourceTree = "<group>"; };
+		FE8E408D2FD71002009FDB81 /* src/src/crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/crypto.h; sourceTree = "<group>"; };
+		FE8E408E2FD71002009FDB81 /* src/src/crypto_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/crypto_config.h; sourceTree = "<group>"; };
 		FE8E40222FD71001009FDB81 /* src/src/global.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/global.c; sourceTree = "<group>"; };
 		FE8E40232FD71001009FDB81 /* src/src/hostkey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/hostkey.c; sourceTree = "<group>"; };
 		FE8E40242FD71001009FDB81 /* src/src/keepalive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/keepalive.c; sourceTree = "<group>"; };
 		FE8E40252FD71001009FDB81 /* src/src/kex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/kex.c; sourceTree = "<group>"; };
 		FE8E40262FD71001009FDB81 /* src/src/knownhost.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/knownhost.c; sourceTree = "<group>"; };
 		FE8E40272FD71001009FDB81 /* src/src/mac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/mac.c; sourceTree = "<group>"; };
+		FE8E408F2FD71002009FDB81 /* src/src/mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/mac.h; sourceTree = "<group>"; };
 		FE8E40282FD71001009FDB81 /* src/src/mbedtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/mbedtls.c; sourceTree = "<group>"; };
+		FE8E40902FD71002009FDB81 /* src/src/mbedtls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/mbedtls.h; sourceTree = "<group>"; };
 		FE8E40292FD71001009FDB81 /* src/src/misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/misc.c; sourceTree = "<group>"; };
+		FE8E40912FD71002009FDB81 /* src/src/misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/misc.h; sourceTree = "<group>"; };
 		FE8E40302FD71001009FDB81 /* src/src/packet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/packet.c; sourceTree = "<group>"; };
+		FE8E40922FD71002009FDB81 /* src/src/packet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/packet.h; sourceTree = "<group>"; };
 		FE8E40312FD71001009FDB81 /* src/src/pem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/pem.c; sourceTree = "<group>"; };
+		FE8E40872FD71002009FDB81 /* src/src/poly1305.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/poly1305.c; sourceTree = "<group>"; };
+		FE8E40932FD71002009FDB81 /* src/src/poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/poly1305.h; sourceTree = "<group>"; };
 		FE8E40322FD71001009FDB81 /* src/src/publickey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/publickey.c; sourceTree = "<group>"; };
 		FE8E40332FD71001009FDB81 /* src/src/scp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/scp.c; sourceTree = "<group>"; };
 		FE8E40342FD71001009FDB81 /* src/src/session.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/session.c; sourceTree = "<group>"; };
+		FE8E40942FD71002009FDB81 /* src/src/session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/session.h; sourceTree = "<group>"; };
 		FE8E40352FD71001009FDB81 /* src/src/sftp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/sftp.c; sourceTree = "<group>"; };
+		FE8E40952FD71002009FDB81 /* src/src/sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/sftp.h; sourceTree = "<group>"; };
 		FE8E40362FD71001009FDB81 /* src/src/transport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/transport.c; sourceTree = "<group>"; };
+		FE8E40962FD71002009FDB81 /* src/src/transport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/transport.h; sourceTree = "<group>"; };
 		FE8E40372FD71001009FDB81 /* src/src/userauth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/userauth.c; sourceTree = "<group>"; };
+		FE8E40972FD71002009FDB81 /* src/src/userauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/userauth.h; sourceTree = "<group>"; };
+		FE8E40892FD71002009FDB81 /* src/src/userauth_kbd_packet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/userauth_kbd_packet.c; sourceTree = "<group>"; };
+		FE8E40982FD71002009FDB81 /* src/src/userauth_kbd_packet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/userauth_kbd_packet.h; sourceTree = "<group>"; };
 		FE8E40382FD71001009FDB81 /* src/src/version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/version.c; sourceTree = "<group>"; };
+		FE8E40992FD71002009FDB81 /* src/src/libssh2_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/libssh2_priv.h; sourceTree = "<group>"; };
+		FE8E409A2FD71002009FDB81 /* src/src/libssh2_setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/src/libssh2_setup.h; sourceTree = "<group>"; };
 		FE8E40632FD71001009FDB81 /* src/include/libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2.h; sourceTree = "<group>"; };
 		FE8E40642FD71001009FDB81 /* src/include/libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2_publickey.h; sourceTree = "<group>"; };
 		FE8E40652FD71001009FDB81 /* src/include/libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2_sftp.h; sourceTree = "<group>"; };
@@ -95,25 +122,47 @@
 				FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */,
 				FE8E40182FD71001009FDB81 /* src/src/blowfish.c */,
 				FE8E40192FD71001009FDB81 /* src/src/channel.c */,
+				FE8E40812FD71002009FDB81 /* src/src/chacha.c */,
+				FE8E408A2FD71002009FDB81 /* src/src/chacha.h */,
+				FE8E40832FD71002009FDB81 /* src/src/cipher-chachapoly.c */,
+				FE8E408B2FD71002009FDB81 /* src/src/cipher-chachapoly.h */,
 				FE8E40202FD71001009FDB81 /* src/src/comp.c */,
+				FE8E408C2FD71002009FDB81 /* src/src/comp.h */,
 				FE8E40212FD71001009FDB81 /* src/src/crypt.c */,
+				FE8E40852FD71002009FDB81 /* src/src/crypto.c */,
+				FE8E408D2FD71002009FDB81 /* src/src/crypto.h */,
+				FE8E408E2FD71002009FDB81 /* src/src/crypto_config.h */,
 				FE8E40222FD71001009FDB81 /* src/src/global.c */,
 				FE8E40232FD71001009FDB81 /* src/src/hostkey.c */,
 				FE8E40242FD71001009FDB81 /* src/src/keepalive.c */,
 				FE8E40252FD71001009FDB81 /* src/src/kex.c */,
 				FE8E40262FD71001009FDB81 /* src/src/knownhost.c */,
 				FE8E40272FD71001009FDB81 /* src/src/mac.c */,
+				FE8E408F2FD71002009FDB81 /* src/src/mac.h */,
 				FE8E40282FD71001009FDB81 /* src/src/mbedtls.c */,
+				FE8E40902FD71002009FDB81 /* src/src/mbedtls.h */,
 				FE8E40292FD71001009FDB81 /* src/src/misc.c */,
+				FE8E40912FD71002009FDB81 /* src/src/misc.h */,
 				FE8E40302FD71001009FDB81 /* src/src/packet.c */,
+				FE8E40922FD71002009FDB81 /* src/src/packet.h */,
 				FE8E40312FD71001009FDB81 /* src/src/pem.c */,
+				FE8E40872FD71002009FDB81 /* src/src/poly1305.c */,
+				FE8E40932FD71002009FDB81 /* src/src/poly1305.h */,
 				FE8E40322FD71001009FDB81 /* src/src/publickey.c */,
 				FE8E40332FD71001009FDB81 /* src/src/scp.c */,
 				FE8E40342FD71001009FDB81 /* src/src/session.c */,
+				FE8E40942FD71002009FDB81 /* src/src/session.h */,
 				FE8E40352FD71001009FDB81 /* src/src/sftp.c */,
+				FE8E40952FD71002009FDB81 /* src/src/sftp.h */,
 				FE8E40362FD71001009FDB81 /* src/src/transport.c */,
+				FE8E40962FD71002009FDB81 /* src/src/transport.h */,
 				FE8E40372FD71001009FDB81 /* src/src/userauth.c */,
+				FE8E40972FD71002009FDB81 /* src/src/userauth.h */,
+				FE8E40892FD71002009FDB81 /* src/src/userauth_kbd_packet.c */,
+				FE8E40982FD71002009FDB81 /* src/src/userauth_kbd_packet.h */,
 				FE8E40382FD71001009FDB81 /* src/src/version.c */,
+				FE8E40992FD71002009FDB81 /* src/src/libssh2_priv.h */,
+				FE8E409A2FD71002009FDB81 /* src/src/libssh2_setup.h */,
 				FE8E40142FD71001009FDB81 /* libssh2_config.h */,
 			);
 			sourceTree = "<group>";
@@ -221,8 +270,11 @@
 				FE8E40412FD71001009FDB81 /* src/src/bcrypt_pbkdf.c in Sources */,
 				FE8E40422FD71001009FDB81 /* src/src/blowfish.c in Sources */,
 				FE8E40432FD71001009FDB81 /* src/src/channel.c in Sources */,
+				FE8E40802FD71002009FDB81 /* src/src/chacha.c in Sources */,
+				FE8E40822FD71002009FDB81 /* src/src/cipher-chachapoly.c in Sources */,
 				FE8E40442FD71001009FDB81 /* src/src/comp.c in Sources */,
 				FE8E40452FD71001009FDB81 /* src/src/crypt.c in Sources */,
+				FE8E40842FD71002009FDB81 /* src/src/crypto.c in Sources */,
 				FE8E40462FD71001009FDB81 /* src/src/global.c in Sources */,
 				FE8E40472FD71001009FDB81 /* src/src/hostkey.c in Sources */,
 				FE8E40482FD71001009FDB81 /* src/src/keepalive.c in Sources */,
@@ -233,12 +285,14 @@
 				FE8E40532FD71001009FDB81 /* src/src/misc.c in Sources */,
 				FE8E40542FD71001009FDB81 /* src/src/packet.c in Sources */,
 				FE8E40552FD71001009FDB81 /* src/src/pem.c in Sources */,
+				FE8E40862FD71002009FDB81 /* src/src/poly1305.c in Sources */,
 				FE8E40562FD71001009FDB81 /* src/src/publickey.c in Sources */,
 				FE8E40572FD71001009FDB81 /* src/src/scp.c in Sources */,
 				FE8E40582FD71001009FDB81 /* src/src/session.c in Sources */,
 				FE8E40592FD71001009FDB81 /* src/src/sftp.c in Sources */,
 				FE8E40602FD71001009FDB81 /* src/src/transport.c in Sources */,
 				FE8E40612FD71001009FDB81 /* src/src/userauth.c in Sources */,
+				FE8E40882FD71002009FDB81 /* src/src/userauth_kbd_packet.c in Sources */,
 				FE8E40622FD71001009FDB81 /* src/src/version.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
