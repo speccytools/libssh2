@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE8E40132FD71001009FDB81 /* mbedtls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8E40122FD71001009FDB81 /* mbedtls.framework */; };
+		FE8E40392FD71001009FDB81 /* src/src/agent.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40152FD71001009FDB81 /* src/src/agent.c */; };
+		FE8E40402FD71001009FDB81 /* src/src/agent_win.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40162FD71001009FDB81 /* src/src/agent_win.c */; };
+		FE8E40412FD71001009FDB81 /* src/src/bcrypt_pbkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */; };
+		FE8E40422FD71001009FDB81 /* src/src/blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40182FD71001009FDB81 /* src/src/blowfish.c */; };
+		FE8E40432FD71001009FDB81 /* src/src/channel.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40192FD71001009FDB81 /* src/src/channel.c */; };
+		FE8E40442FD71001009FDB81 /* src/src/comp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40202FD71001009FDB81 /* src/src/comp.c */; };
+		FE8E40452FD71001009FDB81 /* src/src/crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40212FD71001009FDB81 /* src/src/crypt.c */; };
+		FE8E40462FD71001009FDB81 /* src/src/global.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40222FD71001009FDB81 /* src/src/global.c */; };
+		FE8E40472FD71001009FDB81 /* src/src/hostkey.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40232FD71001009FDB81 /* src/src/hostkey.c */; };
+		FE8E40482FD71001009FDB81 /* src/src/keepalive.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40242FD71001009FDB81 /* src/src/keepalive.c */; };
+		FE8E40492FD71001009FDB81 /* src/src/kex.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40252FD71001009FDB81 /* src/src/kex.c */; };
+		FE8E40502FD71001009FDB81 /* src/src/knownhost.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40262FD71001009FDB81 /* src/src/knownhost.c */; };
+		FE8E40512FD71001009FDB81 /* src/src/mac.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40272FD71001009FDB81 /* src/src/mac.c */; };
+		FE8E40522FD71001009FDB81 /* src/src/mbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40282FD71001009FDB81 /* src/src/mbedtls.c */; };
+		FE8E40532FD71001009FDB81 /* src/src/misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40292FD71001009FDB81 /* src/src/misc.c */; };
+		FE8E40542FD71001009FDB81 /* src/src/packet.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40302FD71001009FDB81 /* src/src/packet.c */; };
+		FE8E40552FD71001009FDB81 /* src/src/pem.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40312FD71001009FDB81 /* src/src/pem.c */; };
+		FE8E40562FD71001009FDB81 /* src/src/publickey.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40322FD71001009FDB81 /* src/src/publickey.c */; };
+		FE8E40572FD71001009FDB81 /* src/src/scp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40332FD71001009FDB81 /* src/src/scp.c */; };
+		FE8E40582FD71001009FDB81 /* src/src/session.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40342FD71001009FDB81 /* src/src/session.c */; };
+		FE8E40592FD71001009FDB81 /* src/src/sftp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40352FD71001009FDB81 /* src/src/sftp.c */; };
+		FE8E40602FD71001009FDB81 /* src/src/transport.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40362FD71001009FDB81 /* src/src/transport.c */; };
+		FE8E40612FD71001009FDB81 /* src/src/userauth.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40372FD71001009FDB81 /* src/src/userauth.c */; };
+		FE8E40622FD71001009FDB81 /* src/src/version.c in Sources */ = {isa = PBXBuildFile; fileRef = FE8E40382FD71001009FDB81 /* src/src/version.c */; };
+		FE8E40662FD71001009FDB81 /* src/include/libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E40632FD71001009FDB81 /* src/include/libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8E40672FD71001009FDB81 /* src/include/libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E40642FD71001009FDB81 /* src/include/libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8E40682FD71001009FDB81 /* src/include/libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E40652FD71001009FDB81 /* src/include/libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE8E40112FD71001009FDB81 /* libssh2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libssh2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8E40122FD71001009FDB81 /* mbedtls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mbedtls.framework; path = ../mbedtls/build/Deployment/mbedtls.framework; sourceTree = SOURCE_ROOT; };
+		FE8E40142FD71001009FDB81 /* libssh2_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libssh2_config.h; sourceTree = "<group>"; };
+		FE8E40152FD71001009FDB81 /* src/src/agent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/agent.c; sourceTree = "<group>"; };
+		FE8E40162FD71001009FDB81 /* src/src/agent_win.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/agent_win.c; sourceTree = "<group>"; };
+		FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/bcrypt_pbkdf.c; sourceTree = "<group>"; };
+		FE8E40182FD71001009FDB81 /* src/src/blowfish.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/blowfish.c; sourceTree = "<group>"; };
+		FE8E40192FD71001009FDB81 /* src/src/channel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/channel.c; sourceTree = "<group>"; };
+		FE8E40202FD71001009FDB81 /* src/src/comp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/comp.c; sourceTree = "<group>"; };
+		FE8E40212FD71001009FDB81 /* src/src/crypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/crypt.c; sourceTree = "<group>"; };
+		FE8E40222FD71001009FDB81 /* src/src/global.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/global.c; sourceTree = "<group>"; };
+		FE8E40232FD71001009FDB81 /* src/src/hostkey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/hostkey.c; sourceTree = "<group>"; };
+		FE8E40242FD71001009FDB81 /* src/src/keepalive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/keepalive.c; sourceTree = "<group>"; };
+		FE8E40252FD71001009FDB81 /* src/src/kex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/kex.c; sourceTree = "<group>"; };
+		FE8E40262FD71001009FDB81 /* src/src/knownhost.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/knownhost.c; sourceTree = "<group>"; };
+		FE8E40272FD71001009FDB81 /* src/src/mac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/mac.c; sourceTree = "<group>"; };
+		FE8E40282FD71001009FDB81 /* src/src/mbedtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/mbedtls.c; sourceTree = "<group>"; };
+		FE8E40292FD71001009FDB81 /* src/src/misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/misc.c; sourceTree = "<group>"; };
+		FE8E40302FD71001009FDB81 /* src/src/packet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/packet.c; sourceTree = "<group>"; };
+		FE8E40312FD71001009FDB81 /* src/src/pem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/pem.c; sourceTree = "<group>"; };
+		FE8E40322FD71001009FDB81 /* src/src/publickey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/publickey.c; sourceTree = "<group>"; };
+		FE8E40332FD71001009FDB81 /* src/src/scp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/scp.c; sourceTree = "<group>"; };
+		FE8E40342FD71001009FDB81 /* src/src/session.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/session.c; sourceTree = "<group>"; };
+		FE8E40352FD71001009FDB81 /* src/src/sftp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/sftp.c; sourceTree = "<group>"; };
+		FE8E40362FD71001009FDB81 /* src/src/transport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/transport.c; sourceTree = "<group>"; };
+		FE8E40372FD71001009FDB81 /* src/src/userauth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/userauth.c; sourceTree = "<group>"; };
+		FE8E40382FD71001009FDB81 /* src/src/version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src/src/version.c; sourceTree = "<group>"; };
+		FE8E40632FD71001009FDB81 /* src/include/libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2.h; sourceTree = "<group>"; };
+		FE8E40642FD71001009FDB81 /* src/include/libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2_publickey.h; sourceTree = "<group>"; };
+		FE8E40652FD71001009FDB81 /* src/include/libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/include/libssh2_sftp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE8E40052FD71001009FDB81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E40132FD71001009FDB81 /* mbedtls.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE8E40072FD71001009FDB81 = {
+			isa = PBXGroup;
+			children = (
+				FE8E40082FD71001009FDB81 /* Products */,
+				FE8E40712FD71001009FDB81 /* Frameworks */,
+				FE8E40632FD71001009FDB81 /* src/include/libssh2.h */,
+				FE8E40642FD71001009FDB81 /* src/include/libssh2_publickey.h */,
+				FE8E40652FD71001009FDB81 /* src/include/libssh2_sftp.h */,
+				FE8E40152FD71001009FDB81 /* src/src/agent.c */,
+				FE8E40162FD71001009FDB81 /* src/src/agent_win.c */,
+				FE8E40172FD71001009FDB81 /* src/src/bcrypt_pbkdf.c */,
+				FE8E40182FD71001009FDB81 /* src/src/blowfish.c */,
+				FE8E40192FD71001009FDB81 /* src/src/channel.c */,
+				FE8E40202FD71001009FDB81 /* src/src/comp.c */,
+				FE8E40212FD71001009FDB81 /* src/src/crypt.c */,
+				FE8E40222FD71001009FDB81 /* src/src/global.c */,
+				FE8E40232FD71001009FDB81 /* src/src/hostkey.c */,
+				FE8E40242FD71001009FDB81 /* src/src/keepalive.c */,
+				FE8E40252FD71001009FDB81 /* src/src/kex.c */,
+				FE8E40262FD71001009FDB81 /* src/src/knownhost.c */,
+				FE8E40272FD71001009FDB81 /* src/src/mac.c */,
+				FE8E40282FD71001009FDB81 /* src/src/mbedtls.c */,
+				FE8E40292FD71001009FDB81 /* src/src/misc.c */,
+				FE8E40302FD71001009FDB81 /* src/src/packet.c */,
+				FE8E40312FD71001009FDB81 /* src/src/pem.c */,
+				FE8E40322FD71001009FDB81 /* src/src/publickey.c */,
+				FE8E40332FD71001009FDB81 /* src/src/scp.c */,
+				FE8E40342FD71001009FDB81 /* src/src/session.c */,
+				FE8E40352FD71001009FDB81 /* src/src/sftp.c */,
+				FE8E40362FD71001009FDB81 /* src/src/transport.c */,
+				FE8E40372FD71001009FDB81 /* src/src/userauth.c */,
+				FE8E40382FD71001009FDB81 /* src/src/version.c */,
+				FE8E40142FD71001009FDB81 /* libssh2_config.h */,
+			);
+			sourceTree = "<group>";
+		};
+		FE8E40082FD71001009FDB81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E40112FD71001009FDB81 /* libssh2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8E40712FD71001009FDB81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E40122FD71001009FDB81 /* mbedtls.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE8E40032FD71001009FDB81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E40662FD71001009FDB81 /* src/include/libssh2.h in Headers */,
+				FE8E40672FD71001009FDB81 /* src/include/libssh2_publickey.h in Headers */,
+				FE8E40682FD71001009FDB81 /* src/include/libssh2_sftp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE8E40022FD71001009FDB81 /* libssh2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8E40102FD71001009FDB81 /* Build configuration list for PBXNativeTarget "libssh2" */;
+			buildPhases = (
+				FE8E40032FD71001009FDB81 /* Headers */,
+				FE8E40042FD71001009FDB81 /* Sources */,
+				FE8E40052FD71001009FDB81 /* Frameworks */,
+				FE8E40062FD71001009FDB81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libssh2;
+			productName = libssh2;
+			productReference = FE8E40112FD71001009FDB81 /* libssh2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE8E40012FD71001009FDB81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FE8E40022FD71001009FDB81 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = FE8E40092FD71001009FDB81 /* Build configuration list for PBXProject "libssh2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE8E40072FD71001009FDB81;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FE8E40082FD71001009FDB81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE8E40022FD71001009FDB81 /* libssh2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE8E40062FD71001009FDB81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE8E40042FD71001009FDB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E40392FD71001009FDB81 /* src/src/agent.c in Sources */,
+				FE8E40402FD71001009FDB81 /* src/src/agent_win.c in Sources */,
+				FE8E40412FD71001009FDB81 /* src/src/bcrypt_pbkdf.c in Sources */,
+				FE8E40422FD71001009FDB81 /* src/src/blowfish.c in Sources */,
+				FE8E40432FD71001009FDB81 /* src/src/channel.c in Sources */,
+				FE8E40442FD71001009FDB81 /* src/src/comp.c in Sources */,
+				FE8E40452FD71001009FDB81 /* src/src/crypt.c in Sources */,
+				FE8E40462FD71001009FDB81 /* src/src/global.c in Sources */,
+				FE8E40472FD71001009FDB81 /* src/src/hostkey.c in Sources */,
+				FE8E40482FD71001009FDB81 /* src/src/keepalive.c in Sources */,
+				FE8E40492FD71001009FDB81 /* src/src/kex.c in Sources */,
+				FE8E40502FD71001009FDB81 /* src/src/knownhost.c in Sources */,
+				FE8E40512FD71001009FDB81 /* src/src/mac.c in Sources */,
+				FE8E40522FD71001009FDB81 /* src/src/mbedtls.c in Sources */,
+				FE8E40532FD71001009FDB81 /* src/src/misc.c in Sources */,
+				FE8E40542FD71001009FDB81 /* src/src/packet.c in Sources */,
+				FE8E40552FD71001009FDB81 /* src/src/pem.c in Sources */,
+				FE8E40562FD71001009FDB81 /* src/src/publickey.c in Sources */,
+				FE8E40572FD71001009FDB81 /* src/src/scp.c in Sources */,
+				FE8E40582FD71001009FDB81 /* src/src/session.c in Sources */,
+				FE8E40592FD71001009FDB81 /* src/src/sftp.c in Sources */,
+				FE8E40602FD71001009FDB81 /* src/src/transport.c in Sources */,
+				FE8E40612FD71001009FDB81 /* src/src/userauth.c in Sources */,
+				FE8E40622FD71001009FDB81 /* src/src/version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE8E40722FD71001009FDB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE8E40732FD71001009FDB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE8E40742FD71001009FDB81 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Deployment;
+		};
+		FE8E40752FD71001009FDB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Deployment",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LIBSSH2_MBEDTLS=1",
+					"HAVE_CONFIG_H=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src/include",
+					"$(PROJECT_DIR)/src/src",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment/mbedtls.framework/Headers",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.10.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Security,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.libssh2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FE8E40762FD71001009FDB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Deployment",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LIBSSH2_MBEDTLS=1",
+					"HAVE_CONFIG_H=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src/include",
+					"$(PROJECT_DIR)/src/src",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment/mbedtls.framework/Headers",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.10.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Security,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.libssh2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FE8E40772FD71001009FDB81 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Deployment",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LIBSSH2_MBEDTLS=1",
+					"HAVE_CONFIG_H=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src/include",
+					"$(PROJECT_DIR)/src/src",
+					"$(PROJECT_DIR)/../mbedtls/build/Deployment/mbedtls.framework/Headers",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.10.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Security,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.libssh2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE8E40092FD71001009FDB81 /* Build configuration list for PBXProject "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8E40722FD71001009FDB81 /* Debug */,
+				FE8E40732FD71001009FDB81 /* Release */,
+				FE8E40742FD71001009FDB81 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		FE8E40102FD71001009FDB81 /* Build configuration list for PBXNativeTarget "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8E40752FD71001009FDB81 /* Debug */,
+				FE8E40762FD71001009FDB81 /* Release */,
+				FE8E40772FD71001009FDB81 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE8E40012FD71001009FDB81 /* Project object */;
+}
